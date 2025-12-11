@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morph Story</title>
+  <link rel="Icon" href="assets/favicon.ico"/>
+  <link href="https://fonts.cdnfonts.com/css/agnostic" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/lemonmilk?styles=18118,18119,18123" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="navigation">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="flavor.html">Flavor</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </nav> 
+
+      <img href="index.html" class="logo" src="assets/logo.png" alt="Morph Logo" />
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="story.html">Story</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <ul class="nav-btns">
+      <li><a href="404.html"><img class="cart-icon" src="assets/cart_icon.png" alt="Cart" /></a></li>
+      <li><a href="#"><img src="assets/cunrty_icon.png" alt="UK" /></a></li>
+    </ul>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="burger-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="story.html">Story</a>
+        <a href="media.html">Media</a>
+        <a href="contacts.html">Contact</a>
+    </div>
+
+    <script>
+        const burgerMenu = document.querySelector('.burger-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        burgerMenu.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+            burgerMenu.classList.toggle('toggle');
+        });
+    </script>
+  </header>
+
+
+  <!-- Main Hero Slider -->
+  <section class="hero-slider-section hidden-scroll">
+    <div class="slider-wrapper hidden-scroll">
+        <!-- Slide 1 -->
+        <div class="hero-slide active-slide hidden-scroll" style="background-image: url('assets/hero-slide-1.png');">
+            <div class="slide-content hidden-scroll">
+                <div class="content-left hidden-scroll">
+                    <p class="about-morph">ABOUT MORPH</p>
+                    <h2 class="slide-main-title">FEEL THE METAMORPHOSIS</h2>
+                    <h3 class="slide-sub-title">For the fit an fearless, evolve with every sip of morph.</h3>
+                    <div class="slide-actions hidden-scroll">
+                        <button class="slider-btn get-early-access-btn">GET EARLY ACCESS</button>
+                        <button class="slider-btn get-press-kit-btn">GET PRESS KIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide hidden-scroll" style="background-image: url('assets/hero-slide-2.png');">
+             <div class="slide-content hidden-scroll">
+                <div class="content-left hidden-scroll">
+                    <p class="about-morph">ABOUT MORPH</p>
+                    <h2 class="slide-main-title">FEEL THE METAMORPHOSIS</h2>
+                    <h3 class="slide-sub-title">ENERGY CRAFTED FOR CREATORS, NIGHT-OWLS AND THOSE WHO EVOLVE.</h3>
+                    <div class="slide-actions hidden-scroll">
+                        <button class="slider-btn get-early-access-btn">GET EARLY ACCESS</button>
+                        <button class="slider-btn get-press-kit-btn">GET PRESS KIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide hidden-scroll" style="background-image: url('assets/hero-slide-3.png');">
+             <div class="slide-content hidden-scroll">
+                <div class="content-left hidden-scroll">
+                    <p class="about-morph">ABOUT MORPH</p>
+                    <h2 class="slide-main-title">FEEL THE METAMORPHOSIS</h2>
+                    <h3 class="slide-sub-title">A splash of freshness yet a drop or rawness, The power of morph</h3>
+                    <div class="slide-actions hidden-scroll">
+                        <button class="slider-btn get-early-access-btn">GET EARLY ACCESS</button>
+                        <button class="slider-btn get-press-kit-btn">GET PRESS KIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="hero-slide hidden-scroll" style="background-image: url('assets/hero-slide-4.png');">
+             <div class="slide-content hidden-scroll">
+                <div class="content-left hidden-scroll">
+                    <p class="about-morph">ABOUT MORPH</p>
+                    <h2 class="slide-main-title">FEEL THE METAMORPHOSIS</h2>
+                    <h3 class="slide-sub-title">Don't ever miss this a chance to morph, DROP</h3>
+                    <div class="slide-actions hidden-scroll">
+                        <button class="slider-btn get-early-access-btn">GET EARLY ACCESS</button>
+                        <button class="slider-btn get-press-kit-btn">GET PRESS KIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="hero-slide hidden-scroll" style="background-image: url('assets/hero-slide-5.png');">
+             <div class="slide-content hidden-scroll">
+                <div class="content-left hidden-scroll">
+                    <p class="about-morph">ABOUT MORPH</p>
+                    <h2 class="slide-main-title">FEEL THE METAMORPHOSIS</h2>
+                    <h3 class="slide-sub-title">World wild launch, New flavor drops, We are on fire </h3>
+                    <div class="slide-actions hidden-scroll">
+                        <button class="slider-btn get-early-access-btn">GET EARLY ACCESS</button>
+                        <button class="slider-btn get-press-kit-btn">GET PRESS KIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-slider-dots hidden-scroll">
+        <span class="hero-dot active-hero-dot"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+    </div>
+  </section>
+
+
+  <!-- Founders Statement -->
+  <section class="founders-section hidden-scroll">
+    <div class="founder hidden-scroll">
+         <img src="assets/founder_img.png" class="founder-img">
+         <div class="founders-text-block">
+            <h3 class="founders-title">Founder</h3>
+            <p class="founders-subtitle">I’m Khaled Rahim</p>
+            <p class="founders-story">I started MORPH because I wanted an energy drink that felt like progress, not a crash. We studied formulas, taste, and culture and built a drink that fuels focus, flavor, and transformation. — Khaled Rahim, Founder</p>
+        </div>
+    </div>
+
+    <div class="co-founder hidden-scroll">
+        <img src="assets/cofounder_img.png" class="cofounder-img">
+        <div class="founders-text-block">
+            <h3 class="founders-title">CO Founder</h3>
+            <p class="founders-subtitle">I’M JAYLEN CARTER</p>
+            <p class="founders-story">I saw in MORPH more than a drink a movement. With a background in sports science and culture, I joined Khaled to create fuel that powers resilience, focus, and the will to evolve. — jaylen carter, CO - founder</p>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Mission & Values -->
+  <section class="our-mission-section hidden-scroll">
+    <div class="mission-top-content hidden-scroll">
+        <div class="mission-background-pattern">
+            <img src="assets/our_mission_img.png" alt="Claw Mark Pattern" class="claw-pattern-img">
+            <img src="assets/our_mission_bg_img.png" alt="Mission Section Background" class="mission-main-bg-img">
+        </div>
+
+        <div class="mission-text-block hidden-scroll">
+            <h2 class="mission-title">OUR MISSION</h2>
+            <h3 class="mission-subtitle">FUEL TRANSFORMATION &mdash; PHYSICALLY AND CREATIVELY.</h3>
+            <p class="mission-description">MORPH makes bold flavors and steady energy for people who work, play, and create after dark. We combine clean caffeine, B-vitamins and crafted flavor to deliver sustained focus without the crash. Our cans are designed to stand out and to help you stand up to what matters.</p>
+        </div>
+    </div>
+
+    <div class="mission-benefits-bar hidden-scroll">
+        <img src="assets/our_mission_ben_bg_img.png" alt="Green Bar Background" class="mission-ben-bg-img">
+        <div class="mission-benefits-content">
+            <div class="mission-benefit-item">
+                <img src="assets/resultfirst_icon.png" alt="Results First Icon" class="mission-benefit-icon">
+                <h4 class="mission-benefit-title">RESULTS FIRST</h4>
+                <p class="mission-benefit-description">PERFORMANCE THAT SUPPORTS WHAT YOU DO.</p>
+            </div>
+            <div class="mission-benefit-item">
+                <img src="assets/creative_icon.png" alt="Creative Culture Icon" class="mission-benefit-icon">
+                <h4 class="mission-benefit-title">CREATIVE CULTURE</h4>
+                <p class="mission-benefit-description">BUILT FOR CREATORS, GAMERS, AND GRINDERS.</p>
+            </div>
+            <div class="mission-benefit-item">
+                <img src="assets/transparent_icon.png" alt="Transparency Icon" class="mission-benefit-icon">
+                <h4 class="mission-benefit-title">TRANSPARENCY</h4>
+                <p class="mission-benefit-description">CLEAR LABELING, LAB-BACKED INGREDIENTS.</p>
+            </div>
+            <div class="mission-benefit-item">
+                <img src="assets/sustainable_icon.png" alt="Sustainability Icon" class="mission-benefit-icon">
+                <h4 class="mission-benefit-title">SUSTAINABILITY</h4>
+                <p class="mission-benefit-description">PACKAGING &amp; SOURCING WITH CONSCIENCE.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- Timeline Story -->
+  <section class="our-story-section hidden-scroll">
+    <div class="story-timeline hidden-scroll">
+        <div class="timeline-item active-timeline-item" data-image="assets/our_story_img_1.png">
+            <div class="timeline-dot"></div>
+            <p class="timeline-text">MORPH WAS BORN FROM ONE STUDIO APARTMENT AND A NOTEBOOK OF FLAVOR IDEAS.</p>
+        </div>
+        <div class="timeline-line hidden-scroll"></div>
+
+        <div class="timeline-item hidden-scroll" data-image="assets/our_story_img_2.png">
+            <div class="timeline-dot"></div>
+            <p class="timeline-text">FROST SURGE LAUNCHED AS A LIMITED RUN AND SOLD OUT IN 72 HOURS.</p>
+        </div>
+        <div class="timeline-line hidden-scroll"></div>
+
+        <div class="timeline-item hidden-scroll" data-image="assets/our_story_img_3.png">
+            <div class="timeline-dot"></div>
+            <p class="timeline-text">EXPANDED TO WHOLESALE AND PARTNERED WITH CREATORS FOR LIMITED COLLABS.</p>
+        </div>
+    </div>
+
+    <div class="story-image-container hidden-scroll">
+        <img src="assets/our_story_img_1.png" alt="Our Story Image" class="story-display-image">
+    </div>
+  </section>
+
+
+  <!-- Newsletter Signup -->
+  <section class="email-signup-section hidden-scroll">
+    <p class="signup-offer-text">LIMITED DROPS & EXCLUSIVE COLLABS. GET 10% OFF YOUR FIRST ORDER.</p>
+    <div class="email-input-container-story">
+        <input type="email" placeholder="ENTER YOUR EMAIL" class="email-input-story">
+    </div>
+    <p class="signup-terms-text">SUBSCRIBE TO RECEIVE UPDATES, ACCESS TO EXCLUSIVE DEALS AND MORE</p>
+    <button class="signup-button">BECOME THE FIRST TO MORPH</button>
+  </section>
+
+
+  <!-- Product Showcase -->
+  <section class="new-flavors-section hidden-scroll">
+        <div class="shop-heading hidden-scroll">
+            <img src="assets/shop_heading_left.png">
+            <h2 class="section-title">NEW FLAVORS</h2>
+            <img src="assets/shop_heading_right.png">
+        </div>
+
+        <div class="flavor-cards-container hidden-scroll">
+            <!-- Card 1 -->
+            <div class="flavor-card hidden-scroll">
+                <div class="can-wrapper">
+                    <a href="frost-surge.html"><img src="assets/frost_surge_img.png" href="frost-surge.html" alt="Morph Frost Surge Energy Drink Can" class="flavor-can"></a>
+                    <button class="add-button"><img src="assets/add_to_cart_unadded.png" alt="Add to Cart"></button>
+                </div>
+                <h3 class="flavor-name frost-surge">FROST SURGE</h3>
+                <p class="flavor-description">GLACIER MINT</p>
+                <a href="frost-surge.html"><button class="learn-more-button" >LEARN MORE</button></a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flavor-card hidden-scroll">
+                <div class="can-wrapper">
+                    <a href="solar-blaze.html"><img src="assets/solar_blaze_img.png" alt="Morph Solar Blaze Energy Drink Can" class="flavor-can"></a>
+                    <button class="add-button"><img src="assets/add_to_cart_unadded.png" alt="Add to Cart"></button>
+                </div>
+                <h3 class="flavor-name solar-blaze">SOLAR BLAZE</h3>
+                <p class="flavor-description">PASSIONATE PASSIONFRUIT</p>
+                <button class="learn-more-button">LEARN MORE</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flavor-card hidden-scroll">
+                <div class="can-wrapper">
+                    <a href="night-shift.html"><img src="assets/night_shift_img.png" alt="Morph Night Shift Energy Drink Can" class="flavor-can"></a>
+                    <button class="add-button"><img src="assets/add_to_cart_unadded.png" alt="Add to Cart"></button>
+                </div>
+                <h3 class="flavor-name night-shift">NIGHT SHIFT</h3>
+                <p class="flavor-description">ELECTRIC LIME</p>
+                <button class="learn-more-button">LEARN MORE</button>
+            </div>
+        </div> 
+  </section>
+
+
+  <!-- UGC / Social Proof -->
+  <section class="ugc-section hidden-scroll">
+    <div class="ugc-carousel-container">
+        <div class="ugc-carousel hidden-scroll">
+            <img src="assets/ugc 1.png" alt="User generated content 1">
+            <img src="assets/ugc 2.png" alt="User generated content 2">
+            <img src="assets/ugc 3.png" alt="User generated content 3">
+            <img src="assets/ugc 4.png" alt="User generated content 4">
+            <img src="assets/ugc 5.png" alt="User generated content 5">
+            <img src="assets/ugc 6.png" alt="User generated content 6">
+            <img src="assets/ugc 7.png" alt="User generated content 7">
+        </div>
+    </div>
+  </section>
+
+
+<!-- Site Footer -->
+<footer>
+    <div class="footer-container hidden-scroll" data-delay="0"> 
+
+        <!-- Brand Information -->
+        <div class="footer-col footer-col-about">
+            <img href="index.html" src="assets/footer_logo.png" alt="Morph Energy Logo" class="footer-logo hidden-scroll" data-delay="100">
+            <p class="footer-description hidden-scroll" data-delay="200">
+                MORPH ENERGY DRINKS. BOLD FLAVORS BUILT FOR CREATORS, GAMERS AND NIGHT-OWLS. LIMITED DROPS & SUBSCRIPTIONS AVAILABLE.
+            </p>
+            <div class="social-icons hidden-scroll" data-delay="300">
+                <a href="#" aria-label="Instagram"><img src="assets/instagram_icon.png" alt="Instagram" class="social-icon"></a>
+                <a href="#" aria-label="Facebook"><img src="assets/facebook_icon.png" alt="Facebook" class="social-icon"></a>
+                <a href="#" aria-label="TikTok"><img src="assets/tiktok_icon.png" alt="TikTok" class="social-icon"></a>
+                <a href="#" aria-label="X (Twitter)"><img src="assets/x_icon.png" alt="X (Twitter)" class="social-icon"></a>
+                <a href="#" aria-label="Twitch"><img src="assets/twich_icon.png" alt="Twitch" class="social-icon"></a>
+            </div>
+            <div class="contact-info hidden-scroll" data-delay="400">
+                <h4>CONTACT INFO</h4>
+                <p>SUPPORT@MORPHENERGY.COM</p>
+                <p>ADDRESS: 123 STREET, LONDON, UK</p>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-col footer-col-links">
+            <div class="footer-nav-group hidden-scroll" data-delay="500">
+                <h4>STORE</h4>
+                <ul>
+                    <li><a href="flavor.html">FLAVORS</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="600">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="story.html">OUR STORY</a></li>
+                    <li><a href="media.html">MEDIA</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="700">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="404.html">FAQ</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="800">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="404.html">PRIVACY POLICY</a></li>
+                    <li><a href="404.html">TERMS & CONDITIONS</a></li>
+                    <li><a href="404.html">RESPONSIBLE USE</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Newsletter -->
+            <div class="footer-col footer-col-newsletter">
+                <h4 class="hidden-scroll" data-delay="900">NEWSLETTER</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="ENTER YOUR EMAIL" class="newsletter-input hidden-scroll" data-delay="1000">
+                    <p class="newsletter-description hidden-scroll" data-delay="1100">SUBSCRIBE TO RECEIVE UPDATES, ACCESS TO EXCLUSIVE DEALS AND MORE</p>
+                    <button class="subscribe-button hidden-scroll" data-delay="1200">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div> 
+
+    </div> 
+
+    <!-- Copyright -->
+    <div class="footer-bottom hidden-scroll" data-delay="1300">
+        <p>&copy; 2025 MORPH ENERGY. ALL RIGHTS RESERVED.</p>
+    </div>
+
+</footer>
+
+
+<!-- Footer Animations Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const footerRevealElements = document.querySelectorAll('footer .hidden-scroll');
+
+    const observerOptions = {
+        root: null, 
+        rootMargin: '0px',
+        threshold: 0.1 
+    };
+
+    const footerObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const delay = parseInt(entry.target.dataset.delay) || 0; 
+                setTimeout(() => {
+                    entry.target.classList.add('show-scroll');
+                    observer.unobserve(entry.target);
+                }, delay);
+            }
+        });
+    }, observerOptions);
+
+    footerRevealElements.forEach(el => {
+        footerObserver.observe(el);
+    });
+});
+</script>
+
+
+<!-- Header & Navigation Logic -->
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+        
+        const header = document.querySelector('header');
+        header.classList.add('show-header');
+        const cartIcon = document.querySelector('.cart-icon');
+
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 50) {
+                header.classList.add('scrolled');
+                cartIcon.src = 'assets/cart_icon_dark.png';
+            } else {
+                header.classList.remove('scrolled');
+                cartIcon.src = 'assets/cart_icon.png';
+            }
+        });
+
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const currentPath = window.location.pathname.split('/').pop();
+
+        navLinks.forEach(link => {
+            const linkPath = link.href.split('/').pop();
+
+            if (currentPath === linkPath) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+
+            if (currentPath === '' && linkPath === 'index.html') {
+                link.classList.add('active');
+            }
+        });
+
+        const addButtons = document.querySelectorAll('.add-button');
+        addButtons.forEach(button => {
+            const buttonImage = button.querySelector('img');
+            button.dataset.added = 'false';
+
+            button.addEventListener('click', function() {
+                let isAddedToCart = (button.dataset.added === 'true');
+
+                if (isAddedToCart) {
+                    button.style.background = 'linear-gradient(to bottom, #f9f9f9, #4FB1A8)';
+                    buttonImage.src = 'assets/add_to_cart_unadded.png';
+                    buttonImage.alt = 'Add to Cart';
+                    button.dataset.added = 'false';
+                } else {
+                    button.style.background = 'linear-gradient(to bottom, #4FB1A8, #f9f9f9)';
+                    buttonImage.src = 'assets/add_to_cart_added.png';
+                    buttonImage.alt = 'Item Added';
+                    button.dataset.added = 'true';
+                }
+            });
+        });
+    });
+</script>
+
+
+<!-- Hero Slider Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroDots = document.querySelectorAll('.hero-dot');
+    const sliderWrapper = document.querySelector('.slider-wrapper'); 
+
+    let currentSlide = 0;
+    const totalSlides = heroSlides.length;
+    let autoSlideInterval; 
+
+    function showSlide(index) {
+        if (index >= totalSlides) {
+            index = 0;
+        } else if (index < 0) {
+            index = totalSlides - 1;
+        }
+        currentSlide = index;
+
+        heroSlides.forEach(slide => {
+            slide.classList.remove('active-slide');
+        });
+        heroDots.forEach(dot => {
+            dot.classList.remove('active-hero-dot');
+        });
+
+        heroSlides[currentSlide].classList.add('active-slide');
+        heroDots[currentSlide].classList.add('active-hero-dot');
+    }
+
+    function startAutoSlide() {
+        if (autoSlideInterval) {
+            clearInterval(autoSlideInterval);
+        }
+        autoSlideInterval = setInterval(() => {
+            showSlide(currentSlide + 1); 
+        }, 4000); 
+    }
+
+    function resetAutoSlide() {
+        startAutoSlide(); 
+    }
+
+    heroDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index); 
+            resetAutoSlide();
+        });
+    });
+
+    let isDragging = false;
+    let startPosX = 0;
+    let dragThreshold = 50; 
+
+    sliderWrapper.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startPosX = e.clientX;
+        if (autoSlideInterval) {
+            clearInterval(autoSlideInterval);
+        }
+    });
+
+    sliderWrapper.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+    });
+
+    sliderWrapper.addEventListener('mouseup', (e) => {
+        if (!isDragging) return;
+        isDragging = false;
+        const endPosX = e.clientX;
+        const dragDistance = endPosX - startPosX;
+
+        if (dragDistance > dragThreshold) {
+            showSlide(currentSlide - 1);
+        } else if (dragDistance < -dragThreshold) {
+            showSlide(currentSlide + 1);
+        }
+        resetAutoSlide(); 
+    });
+
+    sliderWrapper.addEventListener('mouseleave', () => {
+        if (isDragging) {
+            isDragging = false;
+            resetAutoSlide(); 
+        }
+    });
+
+    showSlide(0); 
+    startAutoSlide(); 
+});
+</script>
+
+
+<!-- Timeline & Image Switcher Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const storyDisplayImage = document.querySelector('.story-display-image');
+
+    function updateStoryDisplay(activeItem) {
+        timelineItems.forEach(item => {
+            item.classList.remove('active-timeline-item');
+        });
+
+        activeItem.classList.add('active-timeline-item');
+        const imageUrl = activeItem.dataset.image;
+
+        if (imageUrl) {
+            storyDisplayImage.style.opacity = '0'; 
+            setTimeout(() => {
+                storyDisplayImage.src = imageUrl; 
+                storyDisplayImage.style.opacity = '1'; 
+            }, 300); 
+        }
+    }
+
+    timelineItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            updateStoryDisplay(item);
+        });
+    });
+
+    const initialActiveItem = document.querySelector('.timeline-item.active-timeline-item');
+    if (initialActiveItem) {
+        updateStoryDisplay(initialActiveItem);
+    } else if (timelineItems.length > 0) {
+        updateStoryDisplay(timelineItems[0]);
+    }
+});
+</script>
+
+
+<!-- Newsletter & Form Logic -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const signupButton = document.querySelector('.signup-button');
+    const emailInput = document.querySelector('.email-input-story');
+
+    signupButton.addEventListener('click', function() {
+      const email = emailInput.value;
+      if (email) {
+        console.log('User wants to sign up with:', email);
+        alert('Thank you for signing up with ' + email + '!');
+        emailInput.value = ''; 
+      } else {
+        alert('Please enter your email address!');
+      }
+    });
+  });
+</script>
+
+
+<!-- Carousel Logic -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const carousel = document.querySelector('.ugc-carousel');
+        const carouselContainer = document.querySelector('.ugc-carousel-container');
+
+        let isDragging = false;
+        let startPos = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationFrameId;
+        let autoPlayInterval;
+        const autoPlaySpeed = 2000; 
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(() => {
+                const itemWidth = carousel.children[0].offsetWidth + parseInt(getComputedStyle(carousel).gap);
+                const maxTranslate = carousel.scrollWidth - carouselContainer.offsetWidth;
+                currentTranslate -= itemWidth; 
+
+                if (Math.abs(currentTranslate) >= maxTranslate + itemWidth) {
+                    currentTranslate = 0; 
+                    carousel.style.transition = 'transform 0s'; 
+                    carousel.style.transform = `translateX(${currentTranslate}px)`;
+                    void carousel.offsetWidth; 
+                    carousel.style.transition = 'transform 0.5s ease-in-out';
+                } else {
+                    carousel.style.transition = 'transform 0.5s ease-in-out';
+                }
+                setCarouselPosition();
+            }, autoPlaySpeed);
+        }
+
+        function stopAutoPlay() {
+            clearInterval(autoPlayInterval);
+        }
+
+        carouselContainer.addEventListener('mousedown', dragStart);
+        carouselContainer.addEventListener('touchstart', dragStart);
+        carouselContainer.addEventListener('mouseup', dragEnd);
+        carouselContainer.addEventListener('touchend', dragEnd); 
+        carouselContainer.addEventListener('mouseleave', dragEnd); 
+        carouselContainer.addEventListener('mousemove', drag);
+        carouselContainer.addEventListener('touchmove', drag); 
+
+        function getPositionX(event) {
+            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+        }
+
+        function dragStart(event) {
+            stopAutoPlay(); 
+            isDragging = true;
+            startPos = getPositionX(event);
+            carousel.style.transition = 'none'; 
+            prevTranslate = currentTranslate;
+            cancelAnimationFrame(animationFrameId);
+            carouselContainer.style.cursor = 'grabbing';
+        }
+
+        function drag(event) {
+            if (!isDragging) return;
+            const currentPosition = getPositionX(event);
+            currentTranslate = prevTranslate + currentPosition - startPos;
+            animationFrameId = requestAnimationFrame(setCarouselPosition);
+        }
+
+        function dragEnd() {
+            isDragging = false;
+            cancelAnimationFrame(animationFrameId);
+            carousel.style.transition = 'transform 0.2s ease-out'; 
+            carouselContainer.style.cursor = 'grab';
+            startAutoPlay(); 
+        }
+
+        function setCarouselPosition() {
+            const maxTranslate = 0; 
+            const minTranslate = -(carousel.scrollWidth - carouselContainer.offsetWidth + 20); 
+            
+            if (currentTranslate > maxTranslate) {
+                currentTranslate = maxTranslate;
+            } else if (currentTranslate < minTranslate) {
+                currentTranslate = minTranslate;
+            }
+            carousel.style.transform = `translateX(${currentTranslate}px)`;
+        }
+     
+        startAutoPlay();
+        window.addEventListener('focus', startAutoPlay);
+        window.addEventListener('blur', stopAutoPlay);
+    });
+</script>
+
+
+<!-- Scroll Animation Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    const scrollRevealElements = document.querySelectorAll('.hidden-scroll');
+
+    const observerOptions = {
+        root: null, 
+        rootMargin: '0px',
+        threshold: 0.2 
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-scroll');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    scrollRevealElements.forEach(el => {
+        observer.observe(el);
+    });
+
+});
+</script>
+
+</body>
+</html>

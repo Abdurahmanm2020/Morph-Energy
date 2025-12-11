@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Internet Error</title>
+  <link rel="Icon" href="assets/favicon.ico"/>
+  <link href="https://fonts.cdnfonts.com/css/agnostic" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/lemonmilk?styles=18118,18119,18123" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    <section id="heroSection">
+      
+      <!-- Navigation Header -->
+      <header>
+        <div class="navigation">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="flavor.html">Flavor</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </nav> 
+
+          <img href="index.html" class="logo" src="assets/logo.png" alt="Morph Logo" />
+
+          <nav>
+            <ul class="nav-links">
+              <li><a href="story.html">Story</a></li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <ul class="nav-btns">
+          <li><a href="404.html"><img class="cart-icon" src="assets/cart_icon.png" alt="Cart" /></a></li>
+          <li><a href="#"><img src="assets/cunrty_icon.png" alt="UK" /></a></li>
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="story.html">Story</a>
+            <a href="media.html">Media</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+
+        <script>
+        const burgerMenu = document.querySelector('.burger-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        burgerMenu.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+            burgerMenu.classList.toggle('toggle');
+        });
+        </script>
+      </header>
+
+
+      <!-- 404 Page Content -->
+      <main class="morph-404-container hidden-scroll">
+        <div class="morph-404-content hidden-scroll">
+          <div class="morph-404-numbers">
+            <img src="assets/4_left.png" alt="Number 4" class="morph-404-number-left">
+            <div class="morph-404-can-wrapper">
+              <img src="assets/can_o.png" alt="Morph Energy Can" class="morph-404-can">
+            </div>
+            <img src="assets/4_right.png" alt="Number 4" class="morph-404-number-right">
+          </div>
+
+          <p class="morph-404-main-message hidden-scroll">SEEMS YOU'VE REACHED YOUR LIMIT</p>
+          <p class="morph-404-sub-message hidden-scroll">PERHAPS YOU GOT LOST. FIND YOUR WAY BACK</p>
+
+          <div class="morph-404-actions hidden-scroll">
+            <a href="shop.html" class="morph-404-button morph-404-button-shop">GO TO SHOP</a>
+            <a href="index.html" class="morph-404-button morph-404-button-home">BACK TO HOME</a>
+          </div>
+        </div>
+
+        <img src="assets/404_hero_img.png " alt="Decorative 404 Hero Image" class="morph-404-hero-overlay hidden-scroll">
+      </main>
+
+      <!-- 404 Animations -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const morphCan = document.querySelector('.morph-404-can');
+          if (morphCan) {
+            morphCan.style.animation = 'canSpin 10s linear infinite';
+          }
+
+          const heroOverlay = document.querySelector('.morph-404-hero-overlay');
+          if (heroOverlay) {
+            heroOverlay.style.animation = 'pulseOpacity 5s ease-in-out infinite alternate';
+          }
+        });
+      </script>
+
+    </section>
+
+
+<!-- Site Footer -->
+<footer>
+    <div class="footer-container hidden-scroll" data-delay="0"> 
+
+        <!-- Brand Information -->
+        <div class="footer-col footer-col-about">
+            <img href="index.html" src="assets/footer_logo.png" alt="Morph Energy Logo" class="footer-logo hidden-scroll" data-delay="100">
+            <p class="footer-description hidden-scroll" data-delay="200">
+                MORPH ENERGY DRINKS. BOLD FLAVORS BUILT FOR CREATORS, GAMERS AND NIGHT-OWLS. LIMITED DROPS & SUBSCRIPTIONS AVAILABLE.
+            </p>
+            <div class="social-icons hidden-scroll" data-delay="300">
+                <a href="#" aria-label="Instagram"><img src="assets/instagram_icon.png" alt="Instagram" class="social-icon"></a>
+                <a href="#" aria-label="Facebook"><img src="assets/facebook_icon.png" alt="Facebook" class="social-icon"></a>
+                <a href="#" aria-label="TikTok"><img src="assets/tiktok_icon.png" alt="TikTok" class="social-icon"></a>
+                <a href="#" aria-label="X (Twitter)"><img src="assets/x_icon.png" alt="X (Twitter)" class="social-icon"></a>
+                <a href="#" aria-label="Twitch"><img src="assets/twich_icon.png" alt="Twitch" class="social-icon"></a>
+            </div>
+            <div class="contact-info hidden-scroll" data-delay="400">
+                <h4>CONTACT INFO</h4>
+                <p>SUPPORT@MORPHENERGY.COM</p>
+                <p>ADDRESS: 123 STREET, LONDON, UK</p>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-col footer-col-links">
+            <div class="footer-nav-group hidden-scroll" data-delay="500">
+                <h4>STORE</h4>
+                <ul>
+                    <li><a href="flavor.html">FLAVORS</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="600">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="story.html">OUR STORY</a></li>
+                    <li><a href="media.html">MEDIA</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="700">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="404.html">FAQ</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="800">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="404.html">PRIVACY POLICY</a></li>
+                    <li><a href="404.html">TERMS & CONDITIONS</a></li>
+                    <li><a href="404.html">RESPONSIBLE USE</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="footer-col footer-col-newsletter">
+                <h4 class="hidden-scroll" data-delay="900">NEWSLETTER</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="ENTER YOUR EMAIL" class="newsletter-input hidden-scroll" data-delay="1000">
+                    <p class="newsletter-description hidden-scroll" data-delay="1100">SUBSCRIBE TO RECEIVE UPDATES, ACCESS TO EXCLUSIVE DEALS AND MORE</p>
+                    <button class="subscribe-button hidden-scroll" data-delay="1200">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div> 
+
+    </div> 
+
+    <!-- Copyright Section -->
+    <div class="footer-bottom hidden-scroll" data-delay="1300">
+        <p>&copy; 2025 MORPH ENERGY. ALL RIGHTS RESERVED.</p>
+    </div>
+
+</footer>
+
+ <!-- Footer Animations -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const footerRevealElements = document.querySelectorAll('footer .hidden-scroll');
+
+    const observerOptions = {
+        root: null, 
+        rootMargin: '0px',
+        threshold: 0.1 
+    };
+
+    const footerObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const delay = parseInt(entry.target.dataset.delay) || 0; 
+                setTimeout(() => {
+                    entry.target.classList.add('show-scroll');
+                    observer.unobserve(entry.target);
+                }, delay);
+            }
+        });
+    }, observerOptions);
+
+    footerRevealElements.forEach(el => {
+        footerObserver.observe(el);
+    });
+});
+</script>
+
+
+ <!-- Header Logic -->
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+        
+        const header = document.querySelector('header');
+        header.classList.add('show-header');
+       
+        const cartIcon = document.querySelector('.cart-icon');
+
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 50) {
+                header.classList.add('scrolled');
+                cartIcon.src = 'assets/cart_icon_dark.png';
+            } else {
+                header.classList.remove('scrolled');
+                cartIcon.src = 'assets/cart_icon.png';
+            }
+        });
+
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const currentPath = window.location.pathname.split('/').pop();
+
+        navLinks.forEach(link => {
+            const linkPath = link.href.split('/').pop();
+
+            if (currentPath === linkPath) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+
+            if (currentPath === '' && linkPath === 'index.html') {
+                link.classList.add('active');
+            }
+        });
+
+        const addButtons = document.querySelectorAll('.add-button');
+        addButtons.forEach(button => {
+            const buttonImage = button.querySelector('img');
+            button.dataset.added = 'false';
+
+            button.addEventListener('click', function() {
+                let isAddedToCart = (button.dataset.added === 'true');
+
+                if (isAddedToCart) {
+                    button.style.background = 'linear-gradient(to bottom, #f9f9f9, #4FB1A8)';
+                    buttonImage.src = 'assets/add_to_cart_unadded.png';
+                    buttonImage.alt = 'Add to Cart';
+                    button.dataset.added = 'false';
+                } else {
+                    button.style.background = 'linear-gradient(to bottom, #4FB1A8, #f9f9f9)';
+                    buttonImage.src = 'assets/add_to_cart_added.png';
+                    buttonImage.alt = 'Item Added';
+                    button.dataset.added = 'true';
+                }
+            });
+        });
+    });
+
+
+  const header = document.querySelector('header');
+  const cartIcon = document.querySelector('.cart-icon');
+
+  window.addEventListener('scroll', function() {
+  
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 50) {
+      header.classList.add('scrolled');
+      cartIcon.src = 'assets/cart_icon_dark.png';
+    } else {
+      header.classList.remove('scrolled');
+      cartIcon.src = 'assets/cart_icon.png';
+    }
+  });
+
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const currentPath = window.location.pathname.split('/').pop();
+
+        navLinks.forEach(link => {
+            const linkPath = link.href.split('/').pop();
+           
+            if (currentPath === linkPath) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active'); 
+            }
+
+            if (currentPath === '' && linkPath === 'index.html') {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
+
+<!-- Scroll Reveal Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    const scrollRevealElements = document.querySelectorAll('.hidden-scroll');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2 
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-scroll');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    scrollRevealElements.forEach(el => {
+        observer.observe(el);
+    });
+
+});
+</script>
+
+</body>
+</html>

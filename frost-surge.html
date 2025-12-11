@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morph Shop</title>
+  <link rel="Icon" href="assets/favicon.ico"/>
+  <link href="https://fonts.cdnfonts.com/css/agnostic" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/lemonmilk?styles=18118,18119,18123" rel="stylesheet">
+  <link rel="stylesheet" href="product-style.css"> 
+  <!-- Note: Ensure 'style.css' contains your product styles, or change back to 'product-style.css' if separate -->
+</head>
+<body>
+
+  <main>
+    <section id="heroSection">
+      
+      <!-- Navigation Header -->
+      <header>
+        <div class="navigation">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="flavor.html">Flavor</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </nav> 
+
+          <img href="index.html" class="logo" src="assets/logo.png" alt="Morph Logo" />
+
+          <nav>
+            <ul class="nav-links">
+              <li><a href="story.html">Story</a></li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <ul class="nav-btns">
+          <li><a href="404.html"><img class="cart-icon" src="assets/cart_icon.png" alt="Cart" /></a></li>
+          <li><a href="#"><img src="assets/cunrty_icon.png" alt="UK" /></a></li>
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="story.html">Story</a>
+            <a href="media.html">Media</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+
+        <script>
+            const burgerMenu = document.querySelector('.burger-menu');
+            const mobileNav = document.querySelector('.mobile-nav');
+
+            burgerMenu.addEventListener('click', () => {
+                mobileNav.classList.toggle('open');
+                burgerMenu.classList.toggle('toggle');
+            });
+        </script>
+      </header>
+
+
+      <!-- Main Product Display -->
+      <section class="product_item hidden-scroll">
+        <div>
+            <img class="product_img hidden-scroll" id="mainProductImage" src="assets/frost_surge_img.png" alt="Frost Surge">
+        </div>
+
+        <div>
+            <div class="rating hidden-scroll">
+                <img class="star" src="assets/star.png" alt="My Stars">
+                <img class="star" src="assets/star.png" alt="My Stars">
+                <img class="star" src="assets/star.png" alt="My Stars">
+                <img class="star" src="assets/star.png" alt="My Stars">
+                <img class="star" src="assets/star.png" alt="My Stars">
+                <h5>1k reviews</h5>
+            </div>
+
+            <div class="product_info hidden-scroll">
+                <h1>Frost Surge</h1>
+                <h3 class="flavor_name frost-surge">Glacier mint</h3>
+
+                <ul>
+                    <li>Glacier mint - 500ML</li>
+                    <hr/>
+                    <li>160 mg caffeine</li>
+                    <hr/>
+                    <li>B-vitamins</li>
+                </ul>
+
+                <div class="buttons hidden-scroll">
+                    <button class="main_btn1">Buy Now</button>
+                    <button class="main_btn2">Find in Store</button>
+                </div>
+            </div>
+
+            <div class="product_imgs hidden-scroll">
+                <img class="product_thumb hidden-scroll" src="assets/product_img_fs_4.png" data-full-src="assets/frost_surge_img.png" alt="Front">
+                <img class="product_thumb hidden-scroll" src="assets/product_img_fs_1.png" data-full-src="assets/Frosy surge side.png" alt="Side">
+                <img class="product_thumb hidden-scroll" src="assets/product_img_fs_3.png" data-full-src="assets/Frosy surge back.png" alt="Back">
+                <img class="product_thumb hidden-scroll" src="assets/product_img_fs_2.png" data-full-src="assets/frost_surge_ad_img.png" alt="UGC">
+            </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- Product Benefits Grid -->
+    <section class="benefits hidden-scroll">
+        <div class="ben FS ben1 hidden-scroll">
+            <img class="product_thumb" src="assets/power.png" alt="Power">
+            <h2>Power</h2>
+        </div>
+        <div class="ben FS ben2 hidden-scroll">
+            <img class="product_thumb" src="assets/focus.png" alt="Focus">
+            <h2>Focus</h2>
+        </div>
+        <div class="ben FS ben3 hidden-scroll">
+            <img class="product_thumb" src="assets/flavor.png" alt="Flavor">
+            <h2>Flavor</h2>
+        </div>
+        <div class="ben FS ben4 hidden-scroll">
+            <img class="product_thumb" src="assets/no_crash.png" alt="No Crash">
+            <h2>No Crash</h2>
+        </div>
+    </section>
+
+
+    <!-- Product Information Tabs -->
+    <section class="info_sections">
+        <div class="info_tabs hidden-scroll">
+            <button class="info_tab_btn active" data-tab="reviews">CUSTOMER REVIEWS</button>
+            <button class="info_tab_btn" data-tab="faq">FAQ</button>
+            <button class="info_tab_btn" data-tab="nutrition">NUTRITION FACTS</button>
+        </div>
+
+        <!-- Tab 1: Customer Reviews -->
+        <div id="reviews" class="info_content active hidden-scroll">
+            <div class="reviews_summary">
+                <div class="overall_rating">
+                    <h2>4.6</h2>
+                    <div class="stars_overall">
+                        <img src="assets/star.png" alt="star">
+                        <img src="assets/star.png" alt="star">
+                        <img src="assets/star.png" alt="star">
+                        <img src="assets/star.png" alt="star">
+                        <img src="assets/star.png" alt="star">
+                    </div>
+                    <p>BASED ON 1K REVIEWS</p>
+                </div>
+
+                <div class="rating_breakdown hidden-scroll">
+                    <div class="rating_row">
+                        <span>5</span>
+                        <img src="assets/star.png" alt="star">
+                        <div class="progress_bar">
+                            <div class="progress_fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="rating_row hidden-scroll">
+                        <span>4</span>
+                        <img src="assets/star.png" alt="star">
+                        <div class="progress_bar">
+                            <div class="progress_fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="rating_row hidden-scroll">
+                        <span>3</span>
+                        <img src="assets/star.png" alt="star">
+                        <div class="progress_bar">
+                            <div class="progress_fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="rating_row hidden-scroll">
+                        <span>2</span>
+                        <img src="assets/star.png" alt="star">
+                        <div class="progress_bar">
+                            <div class="progress_fill" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <div class="rating_row hidden-scroll">
+                        <span>1</span>
+                        <img src="assets/star.png" alt="star">
+                        <div class="progress_bar">
+                            <div class="progress_fill" style="width: 10%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review_actions hidden-scroll">
+                    <button class="make_review_btn">MAKE A REVIEW</button>
+                </div>
+            </div>
+
+            <div class="all_reviews hidden-scroll">
+                <button class="toggle_reviews_btn hidden-scroll">
+                    READ REVIEWS <img class="arrow_icon" src="assets/up_arrow.png" alt="toggle reviews">
+                </button>
+
+                <div class="clear"></div>
+
+                <div class="individual_reviews_container collapsed hidden-scroll" >
+                    <div class="individual_review hidden-scroll">
+                        <div class="reviewer_info hidden-scroll">
+                            <img class="profile_pic" src="assets/profile_pic_1.png" alt="Jordan Miller">
+                            <div class="reviewer_details">
+                                <div class="reviewer_stars">
+                                    <img src="assets/star.png" alt="star">
+                                    <img src="assets/star.png" alt="star">
+                                    <img src="assets/star.png" alt="star">
+                                    <img src="assets/star.png" alt="star">
+                                    <img src="assets/star.png" alt="star">
+                                </div>
+                                <span class="reviewer_name">JORDAN MILLER</span>
+                            </div>
+                        </div>
+                        <div class="review_text">
+                            <h4>DW I COULD RUN THE WHOLE NIGHT</h4>
+                            <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR. ID NULLAM VITAE SEMPER ID MORBI. JUSTO SIT ALIQUET TELLUS ARCU MI PROIN.</p>
+                        </div>
+                        <span class="review_date">7/23/2025</span>
+                    </div>
+
+                    <div class="individual_review hidden-scroll">
+                        <div class="reviewer_info hidden-scroll">
+                            <img class="profile_pic hidden-scroll" src="assets/profile_pic_2.png" alt="Maurice">
+                            <div class="reviewer_details">
+                                <div class="reviewer_stars">
+                                    <img src="assets/star.png" alt="star">
+                                    <img src="assets/star.png" alt="star">
+                                    <img src="assets/star.png" alt="star">
+                                    <img src="assets/star.png" alt="star">
+                                </div>
+                                <span class="reviewer_name">MAURICE</span>
+                            </div>
+                        </div>
+                        <div class="review_text">
+                            <h4>WON THE COD CHAMPIONSHIP ON A FROST SURGE</h4>
+                            <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR. ID NULLAM VITAE SEMPER ID MORBI. JUSTO SIT ALIQUET TELLUS ARCU MI PROIN.</p>
+                        </div>
+                        <span class="review_date">7/12/2025</span>
+                    </div>
+
+                    <div class="individual_review hidden-scroll">
+                        <div class="reviewer_info hidden-scroll">
+                            <img class="profile_pic" src="assets/profile_pic_3.png" alt="Helja">
+                            <div class="reviewer_details">
+                                <div class="reviewer_stars">
+                                    <img src="assets/star.png" alt="star">
+                                    <img src="assets/star.png" alt="star">
+                                    <img src="assets/star.png" alt="star">
+                                </div>
+                                <span class="reviewer_name">HELJA</span>
+                            </div>
+                        </div>
+                        <div class="review_text">
+                            <h4>FELT THE SURGE</h4>
+                            <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR. ID NULLAM VITAE SEMPER ID MORBI. JUSTO SIT ALIQUET TELLUS ARCU MI PROIN.</p>
+                        </div>
+                        <span class="review_date">7/30/2025</span>
+                    </div>
+
+                    <div class="individual_review hidden-scroll">
+                        <div class="reviewer_info hidden-scroll">
+                            <img class="profile_pic" src="assets/profile_pic_4.png" alt="Bustaras">
+                            <div class="reviewer_details">
+                                <div class="reviewer_stars">
+                                    <img src="assets/star.png" alt="star">
+                                    <img src="assets/star.png" alt="star">
+                                </div>
+                                <span class="reviewer_name">BUSTARAS</span>
+                            </div>
+                        </div>
+                        <div class="review_text">
+                            <h4>IDK, IM ALWAYS THIS WAY</h4>
+                            <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR. ID NULLAM VITAE SEMPER ID MORBI. JUSTO SIT ALIQUET TELLUS ARCU MI PROIN.</p>
+                        </div>
+                        <span class="review_date">7/2/2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: FAQ -->
+        <div id="faq" class="info_content hidden-scroll">
+            <div class="faq_section_container hidden-scroll">
+                <div class="faq_questions_column hidden-scroll">
+                    <h2 class="faq_main_title">FREQUENTLY ASKED QUESTIONS</h2>
+
+                    <div class="faq_item hidden-scroll">
+                        <button class="faq_question hidden-scroll">
+                            <span>HOW MANY MG CAFFEINE PER CAN?</span>
+                            <img src="assets/plus_icon.png" alt="Toggle Answer" class="faq_toggle_icon">
+                        </button>
+                        <div class="faq_answer hidden-scroll">
+                            <p>EACH 500 ML CAN CONTAINS 160 MG OF CAFFEINE THE PERFECT BALANCE TO FUEL FOCUS AND ENERGY WITHOUT OVERWHELMING YOUR SYSTEM.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq_item">
+                        <button class="faq_question hidden-scroll">
+                            <span>CAN I CANCEL MY SUBSCRIPTION?</span>
+                            <img src="assets/plus_icon.png" alt="Toggle Answer" class="faq_toggle_icon">
+                        </button>
+                        <div class="faq_answer hidden-scroll">
+                            <p>Yes, you can cancel your subscription at any time through your account settings or by contacting our support team.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq_item">
+                        <button class="faq_question hidden-scroll">
+                            <span>IS MORPH SUGAR-FREE?</span>
+                            <img src="assets/plus_icon.png" alt="Toggle Answer" class="faq_toggle_icon">
+                        </button>
+                        <div class="faq_answer hidden-scroll ">
+                            <p>Yes, Morph is completely sugar-free, sweetened with natural alternatives to provide great taste without the added sugars.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq_item">
+                        <button class="faq_question hidden-scroll">
+                            <span>WHERE CAN I BUY MORPH?</span>
+                            <img src="assets/plus_icon.png" alt="Toggle Answer" class="faq_toggle_icon">
+                        </button>
+                        <div class="faq_answer hidden-scroll">
+                            <p>Morph can be purchased directly from our website or through select retail partners. Check our "Store Locator" for a list of physical locations.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq_item">
+                        <button class="faq_question hidden-scroll">
+                            <span>IS MORPH SAFE TO DRINK DAILY?</span>
+                            <img src="assets/plus_icon.png" alt="Toggle Answer" class="faq_toggle_icon">
+                        </button>
+                        <div class="faq_answer hidden-scroll">
+                            <p>When consumed in moderation, Morph is safe for daily consumption. Please consult with a healthcare professional if you have any concerns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq_contact_column hidden-scroll">
+                    <div class="faq_contact_card hidden-scroll">
+                        <img src="assets/speech_icon.png" alt="Speech bubble icon" class="speech_icon">
+                        <h4>DO YOU HAVE MORE QUESTIONS?</h4>
+                        <p>END-TO-END PAYMENTS AND FINANCIAL MANAGEMENT IN A SINGLE SOLUTION. MEET THE RIGHT PLATFORM TO HELP REALIZE.</p>
+                        <button class="direct_mail_btn">SHOOT A DIRECT MAIL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Tab 3: Nutrition -->
+        <div id="nutrition" class="info_content">
+            <div class="nutrition_facts_container hidden-scroll">
+                <img src="assets/nutrition_facts.png" alt="Nutrition Facts Label for Morph" class="nutrition_facts_image">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Cross-Sell Section -->
+    <section class="shop-section hidden-scroll">
+        <div class="shop-heading">
+            <h2 class="section-title">You might also like</h2>
+        </div>
+
+        <div class="flavor-cards-container">
+            <div class="flavor-card hidden-scroll">
+                <div class="can-wrapper">
+                    <a href="frost-surge.html"><img src="assets/frost_surge_img.png" href="frost-surge.html" alt="Morph Frost Surge Energy Drink Can" class="flavor-can"></a>
+                    <button class="add-button"><img src="assets/add_to_cart_unadded.png" alt="Add to Cart"></button>
+                </div>
+                <h3 class="flavor-name frost-surge">FROST SURGE</h3>
+                <p class="flavor-description">GLACIER MINT</p>
+                <a href="frost-surge.html"><button class="learn-more-button" >LEARN MORE</button></a>
+            </div>
+
+            <div class="flavor-card hidden-scroll">
+                <div class="can-wrapper">
+                    <a href="solar-blaze.html"><img src="assets/solar_blaze_img.png" alt="Morph Solar Blaze Energy Drink Can" class="flavor-can"></a>
+                    <button class="add-button"><img src="assets/add_to_cart_unadded.png" alt="Add to Cart"></button>
+                </div>
+                <h3 class="flavor-name solar-blaze">SOLAR BLAZE</h3>
+                <p class="flavor-description">PASSIONATE PASSIONFRUIT</p>
+                <button class="learn-more-button">LEARN MORE</button>
+            </div>
+
+            <div class="flavor-card hidden-scroll">
+                <div class="can-wrapper">
+                    <a href="night-shift.html"><img src="assets/night_shift_img.png" alt="Morph Night Shift Energy Drink Can" class="flavor-can"></a>
+                    <button class="add-button"><img src="assets/add_to_cart_unadded.png" alt="Add to Cart"></button>
+                </div>
+                <h3 class="flavor-name night-shift">NIGHT SHIFT</h3>
+                <p class="flavor-description">ELECTRIC LIME</p>
+                <button class="learn-more-button">LEARN MORE</button>
+            </div>
+        </div>
+      </section>
+
+  
+<!-- Site Footer -->
+<footer>
+    <div class="footer-container hidden-scroll" data-delay="0"> 
+
+        <!-- Brand Information -->
+        <div class="footer-col footer-col-about">
+            <img href="index.html" src="assets/footer_logo.png" alt="Morph Energy Logo" class="footer-logo hidden-scroll" data-delay="100">
+            <p class="footer-description hidden-scroll" data-delay="200">
+                MORPH ENERGY DRINKS. BOLD FLAVORS BUILT FOR CREATORS, GAMERS AND NIGHT-OWLS. LIMITED DROPS & SUBSCRIPTIONS AVAILABLE.
+            </p>
+            <div class="social-icons hidden-scroll" data-delay="300">
+                <a href="#" aria-label="Instagram"><img src="assets/instagram_icon.png" alt="Instagram" class="social-icon"></a>
+                <a href="#" aria-label="Facebook"><img src="assets/facebook_icon.png" alt="Facebook" class="social-icon"></a>
+                <a href="#" aria-label="TikTok"><img src="assets/tiktok_icon.png" alt="TikTok" class="social-icon"></a>
+                <a href="#" aria-label="X (Twitter)"><img src="assets/x_icon.png" alt="X (Twitter)" class="social-icon"></a>
+                <a href="#" aria-label="Twitch"><img src="assets/twich_icon.png" alt="Twitch" class="social-icon"></a>
+            </div>
+            <div class="contact-info hidden-scroll" data-delay="400">
+                <h4>CONTACT INFO</h4>
+                <p>SUPPORT@MORPHENERGY.COM</p>
+                <p>ADDRESS: 123 STREET, LONDON, UK</p>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-col footer-col-links">
+            <div class="footer-nav-group hidden-scroll" data-delay="500">
+                <h4>STORE</h4>
+                <ul>
+                    <li><a href="flavor.html">FLAVORS</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="600">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="story.html">OUR STORY</a></li>
+                    <li><a href="media.html">MEDIA</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="700">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="404.html">FAQ</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="800">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="404.html">PRIVACY POLICY</a></li>
+                    <li><a href="404.html">TERMS & CONDITIONS</a></li>
+                    <li><a href="404.html">RESPONSIBLE USE</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="footer-col footer-col-newsletter">
+                <h4 class="hidden-scroll" data-delay="900">NEWSLETTER</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="ENTER YOUR EMAIL" class="newsletter-input hidden-scroll" data-delay="1000">
+                    <p class="newsletter-description hidden-scroll" data-delay="1100">SUBSCRIBE TO RECEIVE UPDATES, ACCESS TO EXCLUSIVE DEALS AND MORE</p>
+                    <button class="subscribe-button hidden-scroll" data-delay="1200">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div> 
+
+    </div> 
+
+    <!-- Copyright -->
+    <div class="footer-bottom hidden-scroll" data-delay="1300">
+        <p>&copy; 2025 MORPH ENERGY. ALL RIGHTS RESERVED.</p>
+    </div>
+
+</footer>
+
+<!-- Header & Navigation Logic -->
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+        
+        const header = document.querySelector('header');
+        header.classList.add('show-header');
+        const cartIcon = document.querySelector('.cart-icon');
+
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 50) {
+                header.classList.add('scrolled');
+                cartIcon.src = 'assets/cart_icon_dark.png';
+            } else {
+                header.classList.remove('scrolled');
+                cartIcon.src = 'assets/cart_icon.png';
+            }
+        });
+
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const currentPath = window.location.pathname.split('/').pop();
+
+        navLinks.forEach(link => {
+            const linkPath = link.href.split('/').pop();
+
+            if (currentPath === linkPath) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+
+            if (currentPath === '' && linkPath === 'index.html') {
+                link.classList.add('active');
+            }
+        });
+
+        const addButtons = document.querySelectorAll('.add-button');
+        addButtons.forEach(button => {
+            const buttonImage = button.querySelector('img');
+            button.dataset.added = 'false';
+
+            button.addEventListener('click', function() {
+                let isAddedToCart = (button.dataset.added === 'true');
+
+                if (isAddedToCart) {
+                    button.style.background = 'linear-gradient(to bottom, #f9f9f9, #4FB1A8)';
+                    buttonImage.src = 'assets/add_to_cart_unadded.png';
+                    buttonImage.alt = 'Add to Cart';
+                    button.dataset.added = 'false';
+                } else {
+                    button.style.background = 'linear-gradient(to bottom, #4FB1A8, #f9f9f9)';
+                    buttonImage.src = 'assets/add_to_cart_added.png';
+                    buttonImage.alt = 'Item Added';
+                    button.dataset.added = 'true';
+                }
+            });
+        });
+    });
+</script>
+
+<!-- Product Image Gallery Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mainProductImage = document.getElementById('mainProductImage');
+
+    if (mainProductImage) {
+        const thumbnails = document.querySelectorAll('.product_imgs .product_thumb');
+  
+        thumbnails.forEach(function(thumbnail) {
+            thumbnail.addEventListener('click', function() {
+                const fullImageUrl = this.getAttribute('data-full-src');
+                mainProductImage.src = fullImageUrl;
+            });
+        });
+
+    } else {
+        console.error("Error: Main product image with ID 'mainProductImage' not found!");
+    }
+});
+</script>
+
+<!-- Product Information Tabs & FAQ Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Tab Switching
+    const infoTabButtons = document.querySelectorAll('.info_tab_btn');
+    const infoContentSections = document.querySelectorAll('.info_content');
+
+    infoTabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            infoTabButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            const targetTabId = this.getAttribute('data-tab');
+
+            infoContentSections.forEach(section => {
+                section.classList.remove('active');
+                section.style.animation = 'none';
+                section.offsetHeight;
+                section.style.animation = '';
+            });
+
+            const targetSection = document.getElementById(targetTabId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+        });
+    });
+
+    // Reviews Expansion
+    const toggleReviewsBtn = document.querySelector('.toggle_reviews_btn');
+    const individualReviewsContainer = document.querySelector('.individual_reviews_container');
+    const arrowIcon = toggleReviewsBtn ? toggleReviewsBtn.querySelector('.arrow_icon') : null;
+
+    if (toggleReviewsBtn && individualReviewsContainer && arrowIcon) {
+        toggleReviewsBtn.addEventListener('click', function() {
+            individualReviewsContainer.classList.toggle('collapsed');
+            this.classList.toggle('expanded');
+
+            if (this.classList.contains('expanded')) {
+                arrowIcon.src = 'assets/down_arrow.png'; 
+                arrowIcon.alt = 'hide reviews';
+            } else {
+                arrowIcon.src = 'assets/up_arrow.png';
+                arrowIcon.alt = 'read reviews';
+            }
+        });
+
+        individualReviewsContainer.style.maxHeight = individualReviewsContainer.scrollHeight + 'px';
+        individualReviewsContainer.style.opacity = 1;
+        toggleReviewsBtn.classList.add('expanded');
+        arrowIcon.src = 'assets/down_arrow.png';
+    }
+
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq_question');
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const faqItem = this.closest('.faq_item');
+            const faqAnswer = faqItem.querySelector('.faq_answer');
+            const toggleIcon = this.querySelector('.faq_toggle_icon');
+         
+            this.classList.toggle('active');
+            faqAnswer.classList.toggle('active');
+
+            if (faqAnswer.classList.contains('active')) {
+                faqAnswer.style.height = 'auto'; 
+            } else {
+                faqAnswer.style.height = '0';
+            }
+        });
+    });
+});
+</script>
+
+
+<!-- Scroll Animation Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Generic Scroll Reveal
+    const scrollRevealElements = document.querySelectorAll('.hidden-scroll');
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2 
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-scroll');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    scrollRevealElements.forEach(el => {
+        observer.observe(el);
+    });
+
+    // Footer Specific Reveal with Delay
+    const footerRevealElements = document.querySelectorAll('footer .hidden-scroll');
+    const footerObserverOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1 
+    };
+
+    const footerObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const delay = parseInt(entry.target.dataset.delay) || 0; 
+                setTimeout(() => {
+                    entry.target.classList.add('show-scroll');
+                    observer.unobserve(entry.target);
+                }, delay);
+            }
+        });
+    }, footerObserverOptions);
+
+    footerRevealElements.forEach(el => {
+        footerObserver.observe(el);
+    });
+
+});
+</script>
+
+</body>
+</html>

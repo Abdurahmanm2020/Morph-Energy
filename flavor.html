@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morph Flavors</title>
+  <link rel="Icon" href="assets/favicon.ico"/>
+  <link href="https://fonts.cdnfonts.com/css/agnostic" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/lemonmilk?styles=18118,18119,18123" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <section id="heroSection">
+      
+      <!-- Navigation Header -->
+      <header>
+        <div class="navigation">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="flavor.html">Flavor</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </nav> 
+
+          <img href="index.html" class="logo" src="assets/logo.png" alt="Morph Logo" />
+
+          <nav>
+            <ul class="nav-links">
+              <li><a href="story.html">Story</a></li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <ul class="nav-btns">
+          <li><a href="404.html"><img class="cart-icon" src="assets/cart_icon.png" alt="Cart" /></a></li>
+          <li><a href="#"><img src="assets/cunrty_icon.png" alt="UK" /></a></li>
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="story.html">Story</a>
+            <a href="media.html">Media</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+
+        <script>
+            const burgerMenu = document.querySelector('.burger-menu');
+            const mobileNav = document.querySelector('.mobile-nav');
+
+            burgerMenu.addEventListener('click', () => {
+                mobileNav.classList.toggle('open');
+                burgerMenu.classList.toggle('toggle');
+            });
+        </script>
+      </header>
+
+
+      <!-- Flavor Page Main Hero -->
+      <section class="hidden-scroll">
+        <img src="assets/flavor_hero_img.png" alt="Flavors of Morph Hero Image" class="flavor-hero-image">
+        <div class="flavor-hero-content hidden-scroll">
+            <h1>FLAVORS</h1>
+            <h2>OF MORPH</h2>
+        </div>
+      </section>
+
+
+      <!-- Product Showcase: Frost Surge -->
+      <section class="flavor-detail-section hidden-scroll">
+        <div class="flavor-product-hero frost-surge-hero hidden-scroll">
+            <img src="assets/frost_surge_pattern_bg.png" alt="Frost Surge Pattern Background" class="product-pattern-bg hidden-scroll">
+            <img src="assets/frost_surge_img.png" alt="Frost Surge Can" class="product-can-img hidden-scroll">
+        </div>
+
+        <div class="product-info-container hidden-scroll">
+            <h3 class="product-name-title">FROST SURGE — 500 ML</h3>
+            <p class="product-tagline">GLACIER MINT &bull; +100 FOCUS &bull; 160 MG CAFFEINE</p>
+
+            <div class="product-description-grid hidden-scroll">
+                <div class="product-description-text">
+                    <p>TASTE THE SURGE. FROST SURGE IS A GLACIER MINT BLAST BUILT FOR SHORT-TERM SPRINTING. WITH 160MG CAFFEINE, 100MG L-THEANINE, AND B VITAMINS, FROST SURGE GIVES YOU SHARP FOCUS WITHOUT THE CRASH PERFECT FOR LATE NIGHTS, STUDIO SESSIONS, OR THAT FINAL SET.</p>
+                    <p class="warning-text"><strong>WARNING:</strong> CONTAINS HIGH CAFFEINE CONTENT. NOT RECOMMENDED FOR CHILDREN, PREGNANT OR NURSING WOMEN, OR PERSONS SENSITIVE TO CAFFEINE. DO NOT MIX WITH ALCOHOL.</p>
+                </div>
+                <div class="product-key-points hidden-scroll">
+                    <ul>
+                        <li>CRISP GLACIER MINT</li>
+                        <li>CLEAN FINISH</li>
+                        <li>160 MG CAFFEINE</li>
+                        <li>ZERO CRASH</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="benefits-section hidden-scroll">
+            <div class="ben FS ben1">
+                <img class="product_thumb" src="assets/power.png" alt="Power icon">
+                <h2>Power</h2>
+                <p>SUSTAINED ENERGY FOR LONG SESSIONS.</p>
+            </div>
+            <div class="ben FS ben2">
+                <img class="product_thumb" src="assets/focus.png" alt="Focus icon">
+                <h2>Focus</h2>
+                <p>B-VITAMINS + CAFFEINE FOR MENTAL CLARITY.</p>
+            </div>
+            <div class="ben FS ben3">
+                <img class="product_thumb" src="assets/flavor.png" alt="Flavor icon">
+                <h2>Flavor</h2>
+                <p>CRISP GLACIER MINT. CLEAN FINISH.</p>
+            </div>
+            <div class="ben FS ben4">
+                <img class="product_thumb" src="assets/no_crash.png" alt="No Crash icon">
+                <h2>No Crash</h2>
+                <p>BALANCED FORMULA FOR STEADY OUTPUT.</p>
+            </div>
+        </section>
+
+        <div class="product-actions hidden-scroll">
+            <button class="btn buy-now-btn">BUY NOW</button>
+            <button class="btn view-bundle-btn">VIEW BUNDLE</button>
+        </div>
+      </section>
+
+
+      <!-- Product Showcase: Solar Blaze -->
+      <section class="flavor-detail-section hidden-scroll">
+        <div class="flavor-product-hero frost-surge-hero">
+            <img src="assets/solar_blaze_pattern_bg.png" alt="Solar Blaze Pattern Background" class="product-pattern-bg hidden-scroll">
+            <img src="assets/Solar Blaze Can.png" alt="Solar Blaze Can" class="product-can-img hidden-scroll">
+        </div>
+
+        <div class="product-info-container hidden-scroll">
+            <h3 class="product-name-title">SOLAR BLAZE — 500 mL</h3>
+            <p class="product-tagline">Tropical Citrus &bull; +110 Energy &bull; 160 MG CAFFEINE</p>
+
+            <div class="product-description-grid hidden-scroll">
+                <div class="product-description-text">
+                    <p>Catch the blaze. Solar Blaze is a sun-lit citrus surge bright top notes of orange and yuzu, a juicy midpalate, and a clean finish that keeps you moving. Perfect for morning edits, creative warmups, or any time you need a spark.</p>
+                    <p class="warning-text"><strong>WARNING:</strong> CONTAINS HIGH CAFFEINE CONTENT. NOT RECOMMENDED FOR CHILDREN, PREGNANT OR NURSING WOMEN, OR PERSONS SENSITIVE TO CAFFEINE. DO NOT MIX WITH ALCOHOL.</p>
+                </div>
+                <div class="product-key-points hidden-scroll">
+                    <ul>
+                        <li>Sun-bright citrus</li>
+                        <li>Fast lift</li>
+                        <li>160 MG CAFFEINE</li>
+                        <li>ZERO CRASH</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <section class="benefits-section hidden-scroll">
+            <div class="ben SB ben1">
+                <img class="product_thumb" src="assets/power-2.png" alt="Power icon">
+                <h2>Power</h2>
+                <p>Quick energy to ignite momentum.</p>
+            </div>
+            <div class="ben SB ben2">
+                <img class="product_thumb" src="assets/focus-2.png" alt="Focus icon">
+                <h2>Focus</h2>
+                <p>Bright clarity with steady resilience.</p>
+            </div>
+            <div class="ben SB ben3">
+                <img class="product_thumb" src="assets/flavor-2.png" alt="Flavor icon">
+                <h2>Flavor</h2>
+                <p>Tropical citrus with a sun-warm finish.</p>
+            </div>
+            <div class="ben SB ben4">
+                <img class="product_thumb" src="assets/no_crash-2.png" alt="No Crash icon">
+                <h2>No Crash</h2>
+                <p>Balanced formula to avoid mid-day dips.</p>
+            </div>
+        </section>
+
+        <div class="product-actions hidden-scroll">
+            <button class="btn buy-now-btn">BUY NOW</button>
+            <button class="btn view-bundle-btn">VIEW BUNDLE</button>
+        </div>
+      </section>
+
+
+      <!-- Product Showcase: Night Shift -->
+      <section class="flavor-detail-section hidden-scroll">
+        <div class="flavor-product-hero frost-surge-hero hidden-scroll">
+            <img src="assets/night_shift_pattern_bg.png" alt="Night Shift Pattern Background" class="product-pattern-bg hidden-scroll">
+            <img src="assets/Night Shift Can.png" alt="Night Shift Can" class="product-can-img hidden-scroll">
+        </div>
+
+        <div class="product-info-container hidden-scroll">
+            <h3 class="product-name-title">NIGHT SHIFT — 500 mL</h3>
+            <p class="product-tagline">Neon Lime &bull; +90 Focus &bull; 160 MG CAFFEINE</p>
+
+            <div class="product-description-grid hidden-scroll">
+                <div class="product-description-text">
+                    <p>Own the night. Night Shift is neon lime reimagined sharp citrus top notes, a cool midpalate, and a smooth finish that keeps focus tight and jitter low. Made for shift workers, night editors, and players who own midnight hours.</p>
+                    <p class="warning-text"><strong>WARNING:</strong> CONTAINS HIGH CAFFEINE CONTENT. NOT RECOMMENDED FOR CHILDREN, PREGNANT OR NURSING WOMEN, OR PERSONS SENSITIVE TO CAFFEINE. DO NOT MIX WITH ALCOHOL.</p>
+                </div>
+                <div class="product-key-points hidden-scroll">
+                    <ul>
+                        <li>Neon lime zing</li>
+                        <li>Calm focus</li>
+                        <li>160 MG CAFFEINE</li>
+                        <li>ZERO CRASH</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="benefits-section hidden-scroll">
+            <div class="ben NS ben1">
+                <img class="product_thumb" src="assets/power-1.png" alt="Power icon">
+                <h2>Power</h2>
+                <p>Smooth energy to keep you in the zone.</p>
+            </div>
+            <div class="ben NS ben2">
+                <img class="product_thumb" src="assets/focus-1.png" alt="Focus icon">
+                <h2>Focus</h2>
+                <p>Steady mental clarity for long sessions.</p>
+            </div>
+            <div class="ben NS ben3">
+                <img class="product_thumb" src="assets/flavor-1.png" alt="Flavor icon">
+                <h2>Flavor</h2>
+                <p>Neon lime with an addictive tang.</p>
+            </div>
+            <div class="ben NS ben4">
+                <img class="product_thumb" src="assets/no_crash-1.png" alt="No Crash icon">
+                <h2>No Crash</h2>
+                <p>Formulated for stable output through the night.</p>
+            </div>
+        </section>
+
+        <div class="product-actions hidden-scroll">
+            <button class="btn buy-now-btn">BUY NOW</button>
+            <button class="btn view-bundle-btn">VIEW BUNDLE</button>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+
+<!-- Site Footer -->
+<footer>
+    <div class="footer-container hidden-scroll" data-delay="0"> 
+
+        <!-- Brand Information -->
+        <div class="footer-col footer-col-about">
+            <img href="index.html" src="assets/footer_logo.png" alt="Morph Energy Logo" class="footer-logo hidden-scroll" data-delay="100">
+            <p class="footer-description hidden-scroll" data-delay="200">
+                MORPH ENERGY DRINKS. BOLD FLAVORS BUILT FOR CREATORS, GAMERS AND NIGHT-OWLS. LIMITED DROPS & SUBSCRIPTIONS AVAILABLE.
+            </p>
+            <div class="social-icons hidden-scroll" data-delay="300">
+                <a href="#" aria-label="Instagram"><img src="assets/instagram_icon.png" alt="Instagram" class="social-icon"></a>
+                <a href="#" aria-label="Facebook"><img src="assets/facebook_icon.png" alt="Facebook" class="social-icon"></a>
+                <a href="#" aria-label="TikTok"><img src="assets/tiktok_icon.png" alt="TikTok" class="social-icon"></a>
+                <a href="#" aria-label="X (Twitter)"><img src="assets/x_icon.png" alt="X (Twitter)" class="social-icon"></a>
+                <a href="#" aria-label="Twitch"><img src="assets/twich_icon.png" alt="Twitch" class="social-icon"></a>
+            </div>
+            <div class="contact-info hidden-scroll" data-delay="400">
+                <h4>CONTACT INFO</h4>
+                <p>SUPPORT@MORPHENERGY.COM</p>
+                <p>ADDRESS: 123 STREET, LONDON, UK</p>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-col footer-col-links">
+            <div class="footer-nav-group hidden-scroll" data-delay="500">
+                <h4>STORE</h4>
+                <ul>
+                    <li><a href="flavor.html">FLAVORS</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="600">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="story.html">OUR STORY</a></li>
+                    <li><a href="media.html">MEDIA</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="700">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="404.html">FAQ</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="800">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="404.html">PRIVACY POLICY</a></li>
+                    <li><a href="404.html">TERMS & CONDITIONS</a></li>
+                    <li><a href="404.html">RESPONSIBLE USE</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="footer-col footer-col-newsletter">
+                <h4 class="hidden-scroll" data-delay="900">NEWSLETTER</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="ENTER YOUR EMAIL" class="newsletter-input hidden-scroll" data-delay="1000">
+                    <p class="newsletter-description hidden-scroll" data-delay="1100">SUBSCRIBE TO RECEIVE UPDATES, ACCESS TO EXCLUSIVE DEALS AND MORE</p>
+                    <button class="subscribe-button hidden-scroll" data-delay="1200">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div> 
+
+    </div> 
+
+    <!-- Copyright -->
+    <div class="footer-bottom hidden-scroll" data-delay="1300">
+        <p>&copy; 2025 MORPH ENERGY. ALL RIGHTS RESERVED.</p>
+    </div>
+
+</footer>
+
+<!-- Footer Animation Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const footerRevealElements = document.querySelectorAll('footer .hidden-scroll');
+
+    const observerOptions = {
+        root: null, 
+        rootMargin: '0px',
+        threshold: 0.1 
+    };
+
+    const footerObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const delay = parseInt(entry.target.dataset.delay) || 0; 
+                setTimeout(() => {
+                    entry.target.classList.add('show-scroll');
+                    observer.unobserve(entry.target);
+                }, delay);
+            }
+        });
+    }, observerOptions);
+
+    footerRevealElements.forEach(el => {
+        footerObserver.observe(el);
+    });
+});
+</script>
+
+
+<!-- Header & Navigation Logic -->
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+        
+        const header = document.querySelector('header');
+        header.classList.add('show-header');
+        const cartIcon = document.querySelector('.cart-icon');
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 50) {
+                header.classList.add('scrolled');
+                cartIcon.src = 'assets/cart_icon_dark.png';
+            } else {
+                header.classList.remove('scrolled');
+                cartIcon.src = 'assets/cart_icon.png';
+            }
+        });
+
+        // Active Navigation Link
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const currentPath = window.location.pathname.split('/').pop();
+
+        navLinks.forEach(link => {
+            const linkPath = link.href.split('/').pop();
+
+            if (currentPath === linkPath) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+
+            if (currentPath === '' && linkPath === 'index.html') {
+                link.classList.add('active');
+            }
+        });
+
+        // Add to Cart Button Interactions
+        const addButtons = document.querySelectorAll('.add-button');
+        addButtons.forEach(button => {
+            const buttonImage = button.querySelector('img');
+            button.dataset.added = 'false';
+
+            button.addEventListener('click', function() {
+                let isAddedToCart = (button.dataset.added === 'true');
+
+                if (isAddedToCart) {
+                    button.style.background = 'linear-gradient(to bottom, #f9f9f9, #4FB1A8)';
+                    buttonImage.src = 'assets/add_to_cart_unadded.png';
+                    buttonImage.alt = 'Add to Cart';
+                    button.dataset.added = 'false';
+                } else {
+                    button.style.background = 'linear-gradient(to bottom, #4FB1A8, #f9f9f9)';
+                    buttonImage.src = 'assets/add_to_cart_added.png';
+                    buttonImage.alt = 'Item Added';
+                    button.dataset.added = 'true';
+                }
+            });
+        });
+    });
+</script>
+
+
+<!-- Scroll Reveal Animation Logic -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    const scrollRevealElements = document.querySelectorAll('.hidden-scroll');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2 
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-scroll');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    scrollRevealElements.forEach(el => {
+        observer.observe(el);
+    });
+
+});
+</script>
+
+</body>
+</html>

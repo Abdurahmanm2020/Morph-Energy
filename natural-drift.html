@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morph Media</title>
+  <link rel="Icon" href="Assets/favicon.ico"/>
+  <link href="https://fonts.cdnfonts.com/css/agnostic" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/lemonmilk?styles=18118,18119,18123" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <main>
+    
+    <!-- Navigation Header -->
+    <section id="heroSection">
+      <header>
+        <div class="navigation">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="Flavor.html">Flavor</a></li>
+              <li><a href="Shop.html">Shop</a></li>
+            </ul>
+          </nav> 
+
+          <img href="Home.html" class="logo" src="Assets/logo.png" alt="Morph Logo" />
+
+          <nav>
+            <ul class="nav-links">
+              <li><a href="Story.html">Story</a></li>
+              <li><a href="Media.html">Media</a></li>
+              <li><a href="Contacts.html">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <ul class="nav-btns">
+          <li><a href="404.html"><img class="cart-icon" src="Assets/cart_icon.png" alt="Cart" /></a></li>
+          <li><a href="#"><img src="Assets/cunrty_icon.png" alt="UK" /></a></li>
+        </ul>
+
+        <!-- Mobile Menu Controls -->
+        <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <div class="mobile-nav">
+            <a href="Home.html">Home</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Story.html">Story</a>
+            <a href="Media.html">Media</a>
+            <a href="Contacts.html">Contact</a>
+        </div>
+
+        <script>
+            const burgerMenu = document.querySelector('.burger-menu');
+            const mobileNav = document.querySelector('.mobile-nav');
+
+            burgerMenu.addEventListener('click', () => {
+                mobileNav.classList.toggle('open');
+                burgerMenu.classList.toggle('toggle');
+            });
+        </script>
+      </header>
+
+
+      <!-- Media Page Hero -->
+      <section class="media-hero hidden-scroll">
+        <div class="media-hero-content">
+          <h1>ENERGY CRAFTED FOR CREATORS,<br>NIGHT-OWLS AND THOSE WHO EVOLVE.</h1>
+          <div class="media-hero-buttons">
+            <a href="#" class="media-btn light">GET PRESS KIT</a>
+            <a href="#" class="media-btn dark">CONTACT US</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Latest News Grid -->
+      <section class="media-news hidden-scroll">
+        <h2 class="news-title">LATEST IN THE NEWS</h2>
+        <div class="news-grid">
+
+          <div class="news-card large hidden-scroll">
+            <img src="Assets/morph_reaction_img.png" alt="The Reaction of Morph">
+            <div class="news-overlay">
+              <p class="news-date">1 YEARS AGO</p>
+              <h3>THE REACTION OF MORPH</h3>
+              <p class="news-sub">THE RIPPLE EFFECT THAT MORPH CREATED</p>
+              <span class="news-author">MORPH MEDIA</span>
+            </div>
+          </div>
+
+          <div class="news-card small hidden-scroll">
+            <img src="Assets/energy_is_all_img.png" alt="Energy Is All">
+            <div class="news-overlay">
+              <p class="news-date">7 MONTH AGO</p>
+              <h3>ENERGY IS ALL</h3>
+              <p class="news-sub">WE ARE ONLY HERE TO HELP...</p>
+              <span class="news-author">MORPH MEDIA</span>
+            </div>
+          </div>
+
+          <div class="news-card small hidden-scroll">
+            <img src="Assets/world_launch_img.png" alt="World Launch">
+            <div class="news-overlay">
+              <p class="news-date">3 YEARS AGO</p>
+              <h3>WORLD LAUNCH</h3>
+              <p class="news-sub">WATCH US AS WE GO GLOBE</p>
+              <span class="news-author">MORPH MEDIA</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- Social Media Campaign Section -->
+      <section class="media-campaign hidden-scroll">
+        <h2 class="campaign-title">VIEW CAMPAIGN</h2>
+        <p class="campaign-sub">THE LAUNCH ON INSTAGRAM</p>
+
+        <div class="campaign-grid hidden-scroll">
+          <div class="campaign-card">
+            <img src="Assets/Frost_Surge_Instagram.png" alt="Frost Surge Campaign">
+            <p class="campaign-link">VIEW ON INSTAGRAM</p>
+          </div>
+
+          <div class="campaign-card hidden-scroll">
+            <img src="Assets/Solar_Blaze_Instagram.png" alt="Solar Blaze Campaign">
+            <p class="campaign-link">VIEW ON INSTAGRAM</p>
+          </div>
+
+          <div class="campaign-card hidden-scroll">
+            <img src="Assets/Night_Shift_Instagram.png" alt="Night Shift Campaign">
+            <p class="campaign-link">VIEW ON INSTAGRAM</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Upcoming Events -->
+      <section class="upcoming-events hidden-scroll">
+        <h2 class="events-title hidden-scroll">UPCOMING EVENTS</h2>
+        <div class="events-grid">
+
+          <!-- Featured Event -->
+          <div class="events-card large hidden-scroll">
+            <img src="Assets/morph_X_real_madrid_img.png" alt="Morph x Real Madrid">
+            <div class="events-overlay">
+              <p class="events-date">4 DAYS</p>
+              <h3>MORPH X REAL MADRID</h3>
+              <p class="events-sub">WE'ER HAPPY TO ANNOUNCE MORPH WILL BE THERE...</p>
+              <span class="events-author">MORPH MEDIA</span>
+            </div>
+          </div>
+
+          <!-- Secondary Events -->
+          <div class="events-card small hidden-scroll">
+            <img src="Assets/all_you_can_drink_img.png" alt="All You Can Drink">
+            <div class="events-overlay">
+              <p class="events-date">1 WEEK</p>
+              <h3>ALL YOU CAN DRINK</h3>
+              <p class="events-sub">PLEASE DON'T TRY AT HOME</p>
+              <span class="events-author">MORPH MEDIA</span>
+            </div>
+          </div>
+
+          <div class="events-card small hidden-scroll">
+            <img src="Assets/morph_merch_img.png" alt="Morph Merch">
+            <div class="events-overlay">
+              <p class="events-date">3 MONTHS</p>
+              <h3>MORPH MERCH</h3>
+              <p class="events-sub">MORPH MERCH WILL BE HERE SOON</p>
+              <span class="events-author">MORPH MEDIA</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- New Flavors Showcase -->
+      <section class="new-flavors-section hidden-scroll">
+        <div class="shop-heading hidden-scroll">
+            <img src="Assets/shop_heading_left.png">
+            <h2 class="section-title">NEW FLAVORS</h2>
+            <img src="Assets/shop_heading_right.png">
+        </div>
+
+        <div class="flavor-cards-container hidden-scroll">
+            <!-- Frost Surge -->
+            <div class="flavor-card hidden-scroll">
+                <div class="can-wrapper">
+                    <a href="Frost-Surge.html"><img src="Assets/frost_surge_img.png" href="Frost-Surge.html" alt="Morph Frost Surge Energy Drink Can" class="flavor-can"></a>
+                    <button class="add-button"><img src="Assets/add_to_cart_unadded.png" alt="Add to Cart"></button>
+                </div>
+                <h3 class="flavor-name frost-surge">FROST SURGE</h3>
+                <p class="flavor-description">GLACIER MINT</p>
+                <a href="Frost-Surge.html"><button class="learn-more-button" >LEARN MORE</button></a>
+            </div>
+
+            <!-- Solar Blaze -->
+            <div class="flavor-card hidden-scroll">
+                <div class="can-wrapper">
+                    <a href="Solar-Blaze.html"><img src="Assets/solar_blaze_img.png" alt="Morph Solar Blaze Energy Drink Can" class="flavor-can"></a>
+                    <button class="add-button"><img src="Assets/add_to_cart_unadded.png" alt="Add to Cart"></button>
+                </div>
+                <h3 class="flavor-name solar-blaze">SOLAR BLAZE</h3>
+                <p class="flavor-description">PASSIONATE PASSIONFRUIT</p>
+                <button class="learn-more-button">LEARN MORE</button>
+            </div>
+
+            <!-- Night Shift -->
+            <div class="flavor-card hidden-scroll">
+                <div class="can-wrapper">
+                    <a href="Night-Shift.html"><img src="Assets/night_shift_img.png" alt="Morph Night Shift Energy Drink Can" class="flavor-can"></a>
+                    <button class="add-button"><img src="Assets/add_to_cart_unadded.png" alt="Add to Cart"></button>
+                </div>
+                <h3 class="flavor-name night-shift">NIGHT SHIFT</h3>
+                <p class="flavor-description">ELECTRIC LIME</p>
+                <button class="learn-more-button">LEARN MORE</button>
+            </div>
+        </div> 
+      </section>
+
+
+      <!-- User Generated Content (UGC) Carousel -->
+      <section class="ugc-section hidden-scroll">
+        <div class="ugc-carousel-container">
+            <div class="ugc-carousel hidden-scroll">
+                <img src="Assets/ugc 1.png" alt="User generated content 1">
+                <img src="Assets/ugc 2.png" alt="User generated content 2">
+                <img src="Assets/ugc 3.png" alt="User generated content 3">
+                <img src="Assets/ugc 4.png" alt="User generated content 4">
+                <img src="Assets/ugc 5.png" alt="User generated content 5">
+                <img src="Assets/ugc 6.png" alt="User generated content 6">
+                <img src="Assets/ugc 7.png" alt="User generated content 7">
+            </div>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+
+<!-- Site Footer -->
+<footer>
+    <div class="footer-container hidden-scroll" data-delay="0"> 
+
+        <!-- Brand Information -->
+        <div class="footer-col footer-col-about">
+            <img href="Home.html" src="Assets/footer_logo.png" alt="Morph Energy Logo" class="footer-logo hidden-scroll" data-delay="100">
+            <p class="footer-description hidden-scroll" data-delay="200">
+                MORPH ENERGY DRINKS. BOLD FLAVORS BUILT FOR CREATORS, GAMERS AND NIGHT-OWLS. LIMITED DROPS & SUBSCRIPTIONS AVAILABLE.
+            </p>
+            <div class="social-icons hidden-scroll" data-delay="300">
+                <a href="#" aria-label="Instagram"><img src="Assets/instagram_icon.png" alt="Instagram" class="social-icon"></a>
+                <a href="#" aria-label="Facebook"><img src="Assets/facebook_icon.png" alt="Facebook" class="social-icon"></a>
+                <a href="#" aria-label="TikTok"><img src="Assets/tiktok_icon.png" alt="TikTok" class="social-icon"></a>
+                <a href="#" aria-label="X (Twitter)"><img src="Assets/x_icon.png" alt="X (Twitter)" class="social-icon"></a>
+                <a href="#" aria-label="Twitch"><img src="Assets/twich_icon.png" alt="Twitch" class="social-icon"></a>
+            </div>
+            <div class="contact-info hidden-scroll" data-delay="400">
+                <h4>CONTACT INFO</h4>
+                <p>SUPPORT@MORPHENERGY.COM</p>
+                <p>ADDRESS: 123 STREET, LONDON, UK</p>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-col footer-col-links">
+            <div class="footer-nav-group hidden-scroll" data-delay="500">
+                <h4>STORE</h4>
+                <ul>
+                    <li><a href="Flavor.html">FLAVORS</a></li>
+                    <li><a href="Shop.html">SHOP</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="600">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="Story.html">OUR STORY</a></li>
+                    <li><a href="Media.html">MEDIA</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="700">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="404.html">FAQ</a></li>
+                    <li><a href="Contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-group hidden-scroll" data-delay="800">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="404.html">PRIVACY POLICY</a></li>
+                    <li><a href="404.html">TERMS & CONDITIONS</a></li>
+                    <li><a href="404.html">RESPONSIBLE USE</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="footer-col footer-col-newsletter">
+                <h4 class="hidden-scroll" data-delay="900">NEWSLETTER</h4>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="ENTER YOUR EMAIL" class="newsletter-input hidden-scroll" data-delay="1000">
+                    <p class="newsletter-description hidden-scroll" data-delay="1100">SUBSCRIBE TO RECEIVE UPDATES, ACCESS TO EXCLUSIVE DEALS AND MORE</p>
+                    <button class="subscribe-button hidden-scroll" data-delay="1200">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div> 
+
+    </div> 
+
+    <!-- Copyright -->
+    <div class="footer-bottom hidden-scroll" data-delay="1300">
+        <p>&copy; 2025 MORPH ENERGY. ALL RIGHTS RESERVED.</p>
+    </div>
+
+</footer>
+
+
+<!-- Footer Animations Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const footerRevealElements = document.querySelectorAll('footer .hidden-scroll');
+
+    const observerOptions = {
+        root: null, 
+        rootMargin: '0px',
+        threshold: 0.1 
+    };
+
+    const footerObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const delay = parseInt(entry.target.dataset.delay) || 0; 
+                setTimeout(() => {
+                    entry.target.classList.add('show-scroll');
+                    observer.unobserve(entry.target);
+                }, delay);
+            }
+        });
+    }, observerOptions);
+
+    footerRevealElements.forEach(el => {
+        footerObserver.observe(el);
+    });
+});
+</script>
+
+
+<!-- Header & Navigation Logic -->
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+        
+        const header = document.querySelector('header');
+        header.classList.add('show-header');
+        const cartIcon = document.querySelector('.cart-icon');
+
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 50) {
+                header.classList.add('scrolled');
+                cartIcon.src = 'Assets/cart_icon_dark.png';
+            } else {
+                header.classList.remove('scrolled');
+                cartIcon.src = 'Assets/cart_icon.png';
+            }
+        });
+
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const currentPath = window.location.pathname.split('/').pop();
+
+        navLinks.forEach(link => {
+            const linkPath = link.href.split('/').pop();
+
+            if (currentPath === linkPath) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+
+            if (currentPath === '' && linkPath === 'index.html') {
+                link.classList.add('active');
+            }
+        });
+
+        const addButtons = document.querySelectorAll('.add-button');
+        addButtons.forEach(button => {
+            const buttonImage = button.querySelector('img');
+            button.dataset.added = 'false';
+
+            button.addEventListener('click', function() {
+                let isAddedToCart = (button.dataset.added === 'true');
+
+                if (isAddedToCart) {
+                    button.style.background = 'linear-gradient(to bottom, #f9f9f9, #4FB1A8)';
+                    buttonImage.src = 'Assets/add_to_cart_unadded.png';
+                    buttonImage.alt = 'Add to Cart';
+                    button.dataset.added = 'false';
+                } else {
+                    button.style.background = 'linear-gradient(to bottom, #4FB1A8, #f9f9f9)';
+                    buttonImage.src = 'Assets/add_to_cart_added.png';
+                    buttonImage.alt = 'Item Added';
+                    button.dataset.added = 'true';
+                }
+            });
+        });
+    });
+
+  const header = document.querySelector('header');
+  const cartIcon = document.querySelector('.cart-icon');
+ 
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 50) {
+      header.classList.add('scrolled');
+      cartIcon.src = 'Assets/cart_icon_dark.png';
+    } else {
+      header.classList.remove('scrolled');
+      cartIcon.src = 'Assets/cart_icon.png';
+    }
+  });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const currentPath = window.location.pathname.split('/').pop();
+
+        navLinks.forEach(link => {
+            const linkPath = link.href.split('/').pop();
+
+            if (currentPath === linkPath) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active'); 
+            }
+
+            if (currentPath === '' && linkPath === 'index.html') {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
+
+<!-- Carousel Logic -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const carousel = document.querySelector('.ugc-carousel');
+        const carouselContainer = document.querySelector('.ugc-carousel-container');
+
+        let isDragging = false;
+        let startPos = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationFrameId;
+
+        let autoPlayInterval;
+        const autoPlaySpeed = 2000; 
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(() => {
+                const itemWidth = carousel.children[0].offsetWidth + parseInt(getComputedStyle(carousel).gap);
+                const maxTranslate = carousel.scrollWidth - carouselContainer.offsetWidth;
+                currentTranslate -= itemWidth; 
+
+                if (Math.abs(currentTranslate) >= maxTranslate + itemWidth) {
+                    currentTranslate = 0; 
+                    carousel.style.transition = 'transform 0s'; 
+                    carousel.style.transform = `translateX(${currentTranslate}px)`;
+                    void carousel.offsetWidth; 
+                    carousel.style.transition = 'transform 0.5s ease-in-out';
+                } else {
+                    carousel.style.transition = 'transform 0.5s ease-in-out';
+                }
+                setCarouselPosition();
+            }, autoPlaySpeed);
+        }
+
+        function stopAutoPlay() {
+            clearInterval(autoPlayInterval);
+        }
+
+        carouselContainer.addEventListener('mousedown', dragStart);
+        carouselContainer.addEventListener('touchstart', dragStart);
+        carouselContainer.addEventListener('mouseup', dragEnd);
+        carouselContainer.addEventListener('touchend', dragEnd); 
+        carouselContainer.addEventListener('mouseleave', dragEnd); 
+        carouselContainer.addEventListener('mousemove', drag);
+        carouselContainer.addEventListener('touchmove', drag); 
+
+        function getPositionX(event) {
+            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+        }
+
+        function dragStart(event) {
+            stopAutoPlay(); 
+            isDragging = true;
+            startPos = getPositionX(event);
+            carousel.style.transition = 'none'; 
+            prevTranslate = currentTranslate;
+            cancelAnimationFrame(animationFrameId);
+            carouselContainer.style.cursor = 'grabbing';
+        }
+
+        function drag(event) {
+            if (!isDragging) return;
+            const currentPosition = getPositionX(event);
+            currentTranslate = prevTranslate + currentPosition - startPos;
+            animationFrameId = requestAnimationFrame(setCarouselPosition);
+        }
+
+        function dragEnd() {
+            isDragging = false;
+            cancelAnimationFrame(animationFrameId);
+            carousel.style.transition = 'transform 0.2s ease-out'; 
+            carouselContainer.style.cursor = 'grab';
+            startAutoPlay(); 
+        }
+
+        function setCarouselPosition() {
+            const maxTranslate = 0; 
+            const minTranslate = -(carousel.scrollWidth - carouselContainer.offsetWidth + 20); 
+            
+            if (currentTranslate > maxTranslate) {
+                currentTranslate = maxTranslate;
+            } else if (currentTranslate < minTranslate) {
+                currentTranslate = minTranslate;
+            }
+
+            carousel.style.transform = `translateX(${currentTranslate}px)`;
+        }
+     
+        startAutoPlay();
+
+        window.addEventListener('focus', startAutoPlay);
+        window.addEventListener('blur', stopAutoPlay);
+    });
+</script>
+
+
+<!-- Global Scroll Reveal Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    const scrollRevealElements = document.querySelectorAll('.hidden-scroll');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2 
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-scroll');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    scrollRevealElements.forEach(el => {
+        observer.observe(el);
+    });
+
+});
+</script>
+
+</body>
+</html>
